@@ -1,1 +1,382 @@
-<h1>Ya tenemos sitio para el evento!!!</h1>
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Blazor For All</title>
+      <meta name="description" content="">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/landing-page.css"> 
+      <!-- load jQuery 3.2.1 -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <script type="text/javascript">
+        
+        $(document).ready(function($) {
+          
+          // Initialize popover component
+          $(function () {
+            $('[data-toggle="popover"]').popover()
+
+          });
+
+
+
+        });
+      </script>
+    </head>
+
+    <body class="has-animations">
+
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 dotnet-navbar">
+              
+              <div class="navbar-brand" href="index.html#">
+                <a href="https://dotnet.microsoft.com/" target="_blank">
+                  <img class="nav-logo" src="img/dotnet_60x60.png" alt="dotnet logo">
+                </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html#">Evento<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#agenda">Agenda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#organizers">Organizadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#sponsors">Patrocinadores</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+      
+          <!-- Begin page content -->
+          <main role="main" class="container-fluid">
+
+            <section id="info" class="row">
+              <div class="col-sm-12 col-ld-12 text-center">
+                <a href="https://ti.to/home" target="_blank">
+                  <img class="dotnet-banner" src="img/netconf-latam-banner.jpeg" alt="Promo Banner" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Registrate en el evento :)" />
+                </a>
+              </div>
+            </section>
+            
+            <br />
+            <br />
+            <br />
+
+            <section class="row bg-white info-section">
+              <div class="col-sm-12 offset-md-2 col-md-4">
+                <br />
+                <br />
+                <br />
+                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
+                <br />
+                <br />
+                <p class="text-justify"><strong>#NetConfLatam</strong> es un evento internacional en línea co-organizado por Latino .NET Online y la Comunidad Xamarin en Español enfocado en el lanzamiento de .NET 5.0, donde expertos, ponentes y miembros de la comunidad darán a conocer las novedades y ventajas que ofrece esta tecnología a los desarrolladores C# en diversas áreas: web, móvil, desktop, inteligencia artificial, etc.</p>
+                <p class="text-justify">El evento será transmitido de manera online el <strong><em>14, 21 y 28 de noviembre</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...). Basado en el evento principal .NET Conf 2020 organizado por la .NET Foundation, buscamos difundir y generar conocimiento en español.</p>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <img class="" src="img/cartoons_community.png" alt="Community Cartoons" style="max-width: 80%;" />
+              </div>
+            </section>
+
+            <br />
+            <br />
+
+            <section class="row">
+                <div id="agenda" class="col-sm-12 offset-md-2 col-md-8">
+                    <h2 class="text-subtitle text-agenda font-weight-bold text-center">AGENDA</h2>
+                    <br />
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Schedule</th>
+                            <th scope="col">Speaker</th>
+                            <th scope="col">Webinar</th>
+                            <th scope="col">Community</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              10:00 CR-NI <br />
+                              11:00 CO-PE <br />
+                              13:00 ARG-URG <br />
+                              16:00 UTC <br />
+                            </td>
+                            <td>Chris Sainty</td>
+                            <td>Welcome Everybody! Keynote for the event</td>
+                            <td>Somewhere in UK</td>
+                          </tr>
+                          <tr>
+                            <td>22:00 hrs - 23:00 hrs</td>
+                            <td>Angel Garcia</td>
+                            <td>Primeros pasos en Blazor</td>
+                            <td>.NET Dominicana</td>
+                          </tr>
+                          <tr>
+                            <td>22:00 hrs - 23:00 hrs</td>
+                            <td>Abigail Huerda</td>
+                            <td>Componentes compartidos en Blazor</td>
+                            <td>TI Capacitacion</td>
+                          </tr>
+                          <tr>
+                            <td>19:30 hrs - 20:00 hrs</td>
+                            <td>Lautaro Carro</td>
+                            <td>¡Unit Testing como nunca antes visto! Unit Testing para Blazor WebAssembly</td>
+                            <td>Latino .NET Online</td>
+                          </tr>
+                          <tr>
+                            <td>20:00 hrs - 21:00 hrs</td>
+                            <td>Miguel Teheran</td>
+                            <td>Aplicaciones en tiempo real con Blazor y SignalRCore</td>
+                            <td>Avanet / Gorilla Logic</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>22:00 hrs - 23:00 hrs</td>
+                            <td>Vicente Guzman / Hector Uriel</td>
+                            <td>Videojuegos con Blazor</td>
+                            <td>BLAZOR en Español</td>
+                          </tr>
+                          <tr>
+                            <td>22:00 hrs - 23:00 hrs</td>
+                            <td>Miguel Quintero</td>
+                            <td>La Fuerza de los Parametros en Blazor</td>
+                            <td>BLAZOR en Español</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </section>
+                        
+            <section class="row carousel-container">
+              <div id="multimedia" class="col-sm-12 col-md-4">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="flyer-img" src="img/Flyer_Chris.jpeg" alt="First Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="flyer-img" src="img/Flyer_Girl.jpg" alt="Second Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="flyer-img" src="img/Flyer_Chris.jpeg" alt="Third Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="flyer-img" src="img/Flyer_Girl_02.jpg" alt="Third Slide">
+                        </div>
+
+
+
+
+
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+              </div>
+            </section>
+                    
+            <section class="row">
+              <div id="organizers" class="container col-sm-12 offset-md-2 col-md-8">
+                <hr />
+                <h2 class="text-subtitle font-weight-bold text-center">ORGANIZADORES</h2>
+                
+                <br />
+
+                <div class="row cards-container">
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>DotNet Dominicana</strong>
+                        </div>
+                        <div class="card-body">
+                          <img class="organizer-logo" src="img/dotnetdominicana.jpg" alt="dotnet dominicana">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>DotNet Dominicana</strong>
+                        </div>
+                        <div class="card-body">
+                          <p class="text-justify">Somos la comunidad .NET de <a href="https://www.meetup.com/dotnetdom/" target="_blank">Republica Dominicana</a>, estamos abiertos a todos los desarrolladores interesados en aprender, y ampliar sus conocimientos en tecnologías Microsoft .NET y todo lo que tiene para ofrecer, cada mes realizamos eventos elegidos por la comunidad.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Latino NET Online</strong>
+                        </div>
+                        <div class="card-body">
+                          <img class="organizer-logo" src="img/latinonetlogo.png" alt="Latino net">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Latino NET Online</strong>
+                        </div>
+                        <div class="card-body">
+                          <p class="text-justify">Somos la comunidad virtual de .NET para <a href="https://latinonet.online/" target="_blank">America Latina</a>, estamos conformados por miembros de varias comunidades .NET. Realizamos webinars cada sabado, abordamos las tecnologías .NET y todo el ecosistema a su alrededor.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          Fundación AVANET
+                        </div>
+                        <div class="card-body">
+                          <img class="organizer-logo" src="img/avanetlogo.png" alt="Avanet">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          Fundación AVANET
+                        </div>
+                        <div class="card-body">
+                          <p class="text-justify"><a href="https://avanet.org/" target="_blank">Avanet</a> es una comunidad de entusiastas de la tecnología y del compartir conocimiento que ha realizado esta labor durante los últimos 10 años en la ciudad de Medellín. Como fundación, monta eventos de tecnología y apoya a otras comunidades técnicas ayudando con el soporte de las tareas contables que requiere la ejecución de sus eventos.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <section class="row">
+              <div id="sponsors" class="container col-sm-12 offset-md-2 col-md-8">
+                <hr />
+                <h2 class="text-subtitle font-weight-bold text-center">PATROCINADORES</h2>
+                <br />
+                <div class="row cards-container v-cards-container">
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card v-card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>NET University</strong>
+                        </div>
+                        <div class="card-body">
+                          <img class="sponsor-logo-img" src="img/netuniversity.png" alt="Net University">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>NET University</strong>
+                        </div>
+                        <div class="card-body">
+                          <p class="text-justify"><a href="https://net-university.ninja/" target="_blank">Patrocinador</a> del evento, colabora concupones para ser rifados.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-12 col-md-4 v-flipper">
+                    <div class="front-card v-card">
+                        <div class="card-image">
+                            <div class="header-front"></div>
+                            <span class="card-title">Fundación AVANET</span>
+                        </div>
+                        <div class="card-content">
+                          <a href="https://avanet.org/" target="_blank"><img class="img-responsive sponsor-logo-img" src="img/avanetlogo.png" alt="Avanet.org"></a>
+                        </div>
+                    </div>
+                    <div class="back-card v-card">
+                        <div class="card-image">
+                            <div class="header-back"></div>
+                            <span class="card-title">Fundación AVANET</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Patrocinador que colabora con asesoría técnica para el evento y logistica organizativa.</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 v-flipper">
+                    <div class="front-card v-card">
+                        <div class="card-image">
+                            <div class="header-front"></div>
+                            <span class="card-title">JetBrains</span>
+                        </div>
+                        <div class="card-content">
+                          <a href="https://www.jetbrains.com/" target="_blank"><img class="img-responsive sponsor-logo-img" src="img/jetbrainsLogo.png" alt="JetBrainsLogo" /></a>
+                        </div>
+                    </div>
+                    <div class="back-card v-card">
+                        <div class="card-image">
+                            <div class="header-back"></div>
+                            <span class="card-title">JetBrains</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Patrocinador que colabora con licencias que serán rifadas durantes el evento.</p>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </main>
+      
+          <footer class="footer">
+            <div class="container text-center">
+              <span class="text-white">Made with <i class="fa fa-heart" aria-hidden="true"></i> in <a class="footer-link" href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank">BLAZOR</a>
+            </div>
+          </footer>
+          
+    </body>
+</html>
+
