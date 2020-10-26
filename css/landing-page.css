@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #fbfbfb;
+    background-color: ##ffffff;
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     /* Margin bottom by footer height */
     margin-bottom: 15em;
@@ -61,7 +61,7 @@ hr {
 
 .text-subtitle {
   color: #2fafda;
-  margin: 6rem 0 4rem 0;
+  margin: 4rem 0 4rem 0;
 }
 
 .text-agenda {
@@ -91,8 +91,8 @@ hr {
   text-decoration: underline;
 }
 
-.img-blazor-promo {
-  max-width: 85%;
+.banner-section {
+  padding: 5em 0;
 }
 
 .parallax-window {
@@ -102,6 +102,10 @@ hr {
 
 .parallax-row{
   background-color: #000000;
+}
+
+.light-grey-row {
+  background-color: #fbfbfb;
 }
 
 .call-for-speakers-section {
@@ -164,17 +168,23 @@ hr {
   }
   
   .arrow {}
-  
-  .popover .arrow::after {
-    border-bottom-color: #5125ef;
+
+  .bs-popover-top .arrow::after {
+    border-top-color: #5125ef;
   }
 
-
+  .bs-popover-bottom .arrow::after {
+    border-bottom-color: #5125ef;
+  }
   
   /*-------------------------------------------------- Custom page CSS --------------------------------------------------*/
   
+  .mb-3, .my-3 {
+    margin-bottom: 0!important;
+  }
+
   body > .container-fluid {
-    padding: 15px 15px 0;
+    padding: 0 15px 0;
   }
   
   .footer > .container {
@@ -310,31 +320,15 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .v-flipper {
   position: relative;
+  cursor: pointer;
 }
 
 .v-flipper {
   perspective: 600px;
   -webkit-perspective: 600px;
 	-moz-perspective: 600px;
-  
   -webkit-transform-origin: 100% center;
   -moz-transform-origin: 100% center;
   -ms-transform-origin: 100% center;

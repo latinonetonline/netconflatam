@@ -66,7 +66,7 @@
               <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html#">Evento<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html#evento">Evento<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#agenda">Agenda</a>
@@ -85,21 +85,17 @@
           <!-- Begin page content -->
           <main role="main" class="container-fluid">
 
-            <section id="info" class="row">
+            <section id="info" class="row banner-section light-grey-row">
               <div class="col-sm-12 offset-md-2 col-md-8 text-center">
-                <a href="https://ti.to/home" target="_blank">
+                <a href="https://ti.to/comunidad-xamarin-en-espanol/net-conf-latinoamerica-2020" target="_blank">
                   <img class="dotnet-banner" src="img/netconf-latam-banner.jpeg" alt="Promo Banner" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Registrate en el evento :)" />
                 </a>
               </div>
             </section>
             
-            <br />
-            <br />
-            <br />
-
             <section class="row bg-white info-section">
               <div class="col-sm-12 offset-md-2 col-md-4">
-                <h2 class="text-subtitle font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
+                <h2 id="evento" class="text-subtitle font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
                 <p class="text-justify"><strong>#NetConfLatam</strong> es un evento internacional en línea co-organizado por Latino .NET Online y la Comunidad Xamarin en Español enfocado en el lanzamiento de .NET 5.0, donde expertos, ponentes y miembros de la comunidad darán a conocer las novedades y ventajas que ofrece esta tecnología a los desarrolladores C# en diversas áreas: web, móvil, desktop, inteligencia artificial, etc.</p>
                 <br />
                 <p class="text-justify">El evento será transmitido de manera online el <strong><em>14, 21 y 28 de noviembre</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...). Basado en el evento principal .NET Conf 2020 organizado por la .NET Foundation, buscamos difundir y generar conocimiento en español.</p>
@@ -109,14 +105,14 @@
               </div>
             </section>
 
-            <section class="row">
+            <section class="row light-grey-row">
               <div class="col-sm-12 offset-md-2 col-md-4 call-for-speakers-section">
                 <a href="https://sessionize.com/netconflatam2020/" target="_blank">
                   <img class="logo-call-for-speakers" src="img/circle-call-for-speakers.png" alt="Call For Speakers" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Propone tu charla para el evento" />
                 </a>
               </div>
               <div class="col-sm-12 col-md-4 call-for-speakers-section text-center">
-                <h1 class="call-for-speakers">Call For Speakers</h1>
+                <h1 id="agenda" class="call-for-speakers">Call For Speakers</h1>
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac maximus risus. Phasellus tincidunt blandit luctus. Donec odio leo, malesuada sit amet massa ut, suscipit placerat arcu. Ut volutpat dolor.</p>
               </div>
 
@@ -280,14 +276,16 @@
                     </tr>
                   </tbody>
                 </table>
+
+                <br />
+                <br />
               </div>
             </section>
                         
             <section class="row">
               <div id="organizers" class="container col-sm-12 offset-md-2 col-md-8">
-                <hr />
-                
                 <h2 class="text-subtitle font-weight-bold text-center">ORGANIZADORES</h2>
+                
                 <br />
 
                 <div class="row cards-container">
@@ -297,15 +295,15 @@
                         <div class="card-header text-center">
                           <strong>Comunidad Xamarin en Espa&#241;ol</strong>
                         </div>
-                        <div class="card-body">
-                          <img class="organizer-logo" src="img/xamarin-logo.png" alt="Xamarin Esp">
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Xamarin_Esp.png" alt="Xamarin Esp">
                         </div>
                       </section>
                       <section class="back">
                         <div class="card-header text-center">
                           <strong>Comunidad Xamarin en Espa&#241;ol</strong>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                           <p class="text-justify">Somos la comunidad de <a href="https://www.facebook.com/groups/xamarindiplomadoitc/" target="_blank">Xamarin en Espa&#241;ol</a>, estamos abiertos a todos los desarrolladores interesados en aprender desarrollo movil, utilizando C# como lenguaje. Compartimos la pasión y el buen gusto por las tecnologías Microsoft .NET y todo su ecosistema.</p>
                         </div>
                       </section>
@@ -318,7 +316,7 @@
                         <div class="card-header text-center">
                           <strong>Latino NET Online</strong>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                           <img class="organizer-logo" src="img/latinonetlogo.png" alt="Latino net">
                         </div>
                       </section>
@@ -326,7 +324,7 @@
                         <div class="card-header text-center">
                           <strong>Latino NET Online</strong>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                           <p class="text-justify">Somos la comunidad virtual de .NET para <a href="https://latinonet.online/" target="_blank">America Latina</a>, estamos conformados por miembros de varias comunidades .NET. Realizamos webinars cada sabado, abordamos las tecnologías .NET y todo el ecosistema a su alrededor.</p>
                         </div>
                       </section>
@@ -352,7 +350,7 @@
                 <div class="row cards-container v-cards-container">
 
                   <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card">
+                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
                             <div class="header-front text-center"><strong>JetBrains</strong></div>
                         </div>
@@ -360,7 +358,7 @@
                           <img class="img-responsive sponsor-logo-img jetbrains-logo" src="img/jetbrains_logo.png" alt="JetBrainsLogo">
                         </div>
                     </div>
-                    <div class="back-card v-card">
+                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
                             <div class="header-back text-center"><strong>JetBrains</strong></div>
                         </div>
@@ -371,7 +369,7 @@
                   </div>
 
                   <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card">
+                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
                             <div class="header-front text-center"><strong>NET University</strong></div>
                         </div>
@@ -381,7 +379,7 @@
                           <img class="img-responsive sponsor-logo-img" src="img/netuniversity.png" alt="Net University">
                         </div>
                     </div>
-                    <div class="back-card v-card">
+                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
                             <div class="header-back text-center"><strong>NET University</strong></div>
                         </div>
@@ -392,7 +390,7 @@
                   </div>
 
                   <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card">
+                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
                             <div class="header-front text-center"><strong>Microsoft Press</strong></div>
                         </div>
@@ -402,7 +400,7 @@
                           <img class="img-responsive sponsor-logo-img" src="img/1200px-Microsoft_Press_Logopng.png" alt="Microsoft Press">
                         </div>
                     </div>
-                    <div class="back-card v-card">
+                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
                             <div class="header-back text-center"><strong>Microsoft Press</strong></div>
                         </div>
