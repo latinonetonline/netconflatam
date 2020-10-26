@@ -10,17 +10,17 @@
       <meta name="description" content="">
       <meta name="author" content="">
 
-      <title>Blazor For All</title>
+      <title>NET Conf Latam</title>
       <meta name="description" content="">
       
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/landing-page.css"> 
+      
       <!-- load jQuery 3.2.1 -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
       <script type="text/javascript">
         
         $(document).ready(function($) {
@@ -31,7 +31,20 @@
 
           });
 
+          $(".flipper").click(function() {
+            var target = $( event.target );
+            if ( target.is("img") ) {
+              //follow that link
+              return true;
+            } else {
+              $(this).toggleClass("flip");
+            }
+            return false;
+          });
 
+          $(".v-flipper").click(function() {		        
+            $(this).toggleClass("v-flip");
+          });
 
         });
       </script>
@@ -87,13 +100,9 @@
 
             <section class="row bg-white info-section">
               <div class="col-sm-12 offset-md-2 col-md-4">
-                <br />
-                <br />
-                <br />
-                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
-                <br />
-                <br />
+                <h2 class="text-subtitle font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
                 <p class="text-justify"><strong>#NetConfLatam</strong> es un evento internacional en línea co-organizado por Latino .NET Online y la Comunidad Xamarin en Español enfocado en el lanzamiento de .NET 5.0, donde expertos, ponentes y miembros de la comunidad darán a conocer las novedades y ventajas que ofrece esta tecnología a los desarrolladores C# en diversas áreas: web, móvil, desktop, inteligencia artificial, etc.</p>
+                <br />
                 <p class="text-justify">El evento será transmitido de manera online el <strong><em>14, 21 y 28 de noviembre</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...). Basado en el evento principal .NET Conf 2020 organizado por la .NET Foundation, buscamos difundir y generar conocimiento en español.</p>
               </div>
               <div class="col-sm-12 col-md-4">
@@ -101,144 +110,210 @@
               </div>
             </section>
 
-            <br />
-            <br />
-
             <section class="row">
-                <div id="agenda" class="col-sm-12 offset-md-2 col-md-8">
-                    <h2 class="text-subtitle text-agenda font-weight-bold text-center">AGENDA</h2>
-                    <br />
-                    <table class="table">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Schedule</th>
-                            <th scope="col">Speaker</th>
-                            <th scope="col">Webinar</th>
-                            <th scope="col">Community</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>22:00-23:00 hrs</td>
-                            <td>Luis Beltran, Humberto Jaimes & Lautaro Carro</td>
-                            <td>Keynote del evento</td>
-                            <td>Somewhere in UK</td>
-                          </tr>
-                          <tr>
-                            <td>22:00-23:00 hrs</td>
-                            <td>Angel Garcia</td>
-                            <td>Primeros pasos en Blazor</td>
-                            <td>.NET Dominicana</td>
-                          </tr>
-                          <tr>
-                            <td>22:00-23:00 hrs</td>
-                            <td>Abigail Huerda</td>
-                            <td>Componentes compartidos en Blazor</td>
-                            <td>TI Capacitacion</td>
-                          </tr>
-                          <tr>
-                            <td>19:30-20:00 hrs</td>
-                            <td>Lautaro Carro</td>
-                            <td>¡Unit Testing como nunca antes visto! Unit Testing para Blazor WebAssembly</td>
-                            <td>Latino .NET Online</td>
-                          </tr>
-                          <tr>
-                            <td>20:00-21:00 hrs</td>
-                            <td>Miguel Teheran</td>
-                            <td>Aplicaciones en tiempo real con Blazor y SignalRCore</td>
-                            <td>Avanet / Gorilla Logic</td>
-                          </tr>
-                          <tr>
-                            <td>22:00-23:00 hrs</td>
-                            <td>Vicente Guzman / Hector Uriel</td>
-                            <td>Videojuegos con Blazor</td>
-                            <td>BLAZOR en Español</td>
-                          </tr>
-                          <tr>
-                            <td>22:00-23:00 hrs</td>
-                            <td>Miguel Quintero</td>
-                            <td>La Fuerza de los Parametros en Blazor</td>
-                            <td>BLAZOR en Español</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </section>
-                        
-            <section class="row carousel-container">
-              <div id="multimedia" class="col-sm-12 col-md-4">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                        <li data-target="#myCarousel" data-slide-to="6"></li>
-                    </ol>
-                    <!-- Wrapper for carousel items -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="flyer-img" src="img/Flyer_Chris.jpeg" alt="First Slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="flyer-img" src="img/Flyer_Girl.jpg" alt="Second Slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="flyer-img" src="img/Flyer_Chris.jpeg" alt="Third Slide">
-                        </div>
-                        <div class="carousel-item">
-                          <img class="flyer-img" src="img/Flyer_Girl_02.jpg" alt="Third Slide">
-                        </div>
+              <div class="col-sm-12 offset-md-2 col-md-4 call-for-speakers-section">
+                <a href="https://sessionize.com/netconflatam2020/" target="_blank">
+                  <img class="" src="img/call_for_speakers.png" alt="Call For Speakers" style="max-width: 100%; border-radius: 12em;" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Propone tu charla para el evento" />
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-4 call-for-speakers-section text-center">
+                <h1 class="call-for-speakers">Call For Speakers</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac maximus risus. Phasellus tincidunt blandit luctus. Donec odio leo, malesuada sit amet massa ut, suscipit placerat arcu. Ut volutpat dolor.</p>
+              </div>
 
+              <div class="col-sm-12 offset-md-2 col-md-8">
 
+                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Día 1 &#126; 14 de Noviembre</h2>
 
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Horario</th>
+                      <th scope="col">Speaker</th>
+                      <th scope="col">Webinar</th>
+                      <th scope="col">Pais</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Luis, Humberto & Lautaro</td>
+                      <td>Keynote del evento</td>
+                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /> <img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico"/></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/uy.png" alt="uy flag" title="Uruguay" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/cr.png" alt="cr flag" title="Costa Rica" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/co.png" alt="co flag" title="Colombia" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/rd.png" alt="rd flag" title="Republica Dominicana" /></td>
+                    </tr>
+                  </tbody>
+                </table>
 
-
-                    </div>
-                    <!-- Carousel controls -->
-                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>
+                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Día 2 &#126; 21 de Noviembre</h2>
+                
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Horario</th>
+                      <th scope="col">Speaker</th>
+                      <th scope="col">Webinar</th>
+                      <th scope="col">Pais</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Social Hour</td>
+                      <td>Social Hour</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/ch.png" alt="ch flag" title="Chile" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/pe.png" alt="pe flag" title="Peru" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/bo.png" alt="bo flag" title="Bolivia" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Día 3 &#126; 28 de Noviembre</h2>
+                
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Horario</th>
+                      <th scope="col">Speaker</th>
+                      <th scope="col">Webinar</th>
+                      <th scope="col">Pais</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/gt.png" alt="gt flag" title="Guatemala"/></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/ch.png" alt="ch flag" title="Chile" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Espacio disponible</td>
+                      <td>Tema a decidirse</td>
+                      <td><img class="emoji-flag" src="img/Flags/pa.png" alt="pa flag" title="Paraguay" /></td>
+                    </tr>
+                    <tr>
+                      <td>10:00 - 11:00 am</td>
+                      <td>Luis, Humberto & Lautaro</td>
+                      <td>Clausua del evento</td>
+                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /> <img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </section>
-                    
+                        
             <section class="row">
               <div id="organizers" class="container col-sm-12 offset-md-2 col-md-8">
                 <hr />
-                <h2 class="text-subtitle font-weight-bold text-center">ORGANIZADORES</h2>
                 
+                <h2 class="text-subtitle font-weight-bold text-center">ORGANIZADORES</h2>
                 <br />
 
                 <div class="row cards-container">
-                  <div class="col-sm-12 col-md-4 flipper">
+                  <div class="col-sm-12 offset-md-1 col-md-4 flipper">
                     <div class="card">
                       <section class="front">
                         <div class="card-header text-center">
-                          <strong>DotNet Dominicana</strong>
+                          <strong>Comunidad Xamarin en Espa&#241;ol</strong>
                         </div>
                         <div class="card-body">
-                          <img class="organizer-logo" src="img/dotnetdominicana.jpg" alt="dotnet dominicana">
+                          <img class="organizer-logo" src="img/xamarin-logo.png" alt="Xamarin Esp">
                         </div>
                       </section>
                       <section class="back">
                         <div class="card-header text-center">
-                          <strong>DotNet Dominicana</strong>
+                          <strong>Comunidad Xamarin en Espa&#241;ol</strong>
                         </div>
                         <div class="card-body">
-                          <p class="text-justify">Somos la comunidad .NET de <a href="https://www.meetup.com/dotnetdom/" target="_blank">Republica Dominicana</a>, estamos abiertos a todos los desarrolladores interesados en aprender, y ampliar sus conocimientos en tecnologías Microsoft .NET y todo lo que tiene para ofrecer, cada mes realizamos eventos elegidos por la comunidad.</p>
+                          <p class="text-justify">Somos la comunidad de <a href="https://www.facebook.com/groups/xamarindiplomadoitc/" target="_blank">Xamarin en Espa&#241;ol</a>, estamos abiertos a todos los desarrolladores interesados en aprender desarrollo movil, utilizando C# como lenguaje. Compartimos la pasión y el buen gusto por las tecnologías Microsoft .NET y todo su ecosistema.</p>
                         </div>
                       </section>
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-4 flipper">
+                  <div class="col-sm-12 offset-md-2 col-md-4 flipper">
                     <div class="card">
                       <section class="front">
                         <div class="card-header text-center">
@@ -259,26 +334,6 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-4 flipper">
-                    <div class="card">
-                      <section class="front">
-                        <div class="card-header text-center">
-                          Fundación AVANET
-                        </div>
-                        <div class="card-body">
-                          <img class="organizer-logo" src="img/avanetlogo.png" alt="Avanet">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header text-center">
-                          Fundación AVANET
-                        </div>
-                        <div class="card-body">
-                          <p class="text-justify"><a href="https://avanet.org/" target="_blank">Avanet</a> es una comunidad de entusiastas de la tecnología y del compartir conocimiento que ha realizado esta labor durante los últimos 10 años en la ciudad de Medellín. Como fundación, monta eventos de tecnología y apoya a otras comunidades técnicas ayudando con el soporte de las tareas contables que requiere la ejecución de sus eventos.</p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
                 </div>
                 
               </div>
@@ -287,54 +342,31 @@
             <br />
             <br />
             <br />
-            <br />
 
             <section class="row">
               <div id="sponsors" class="container col-sm-12 offset-md-2 col-md-8">
                 <hr />
+                
                 <h2 class="text-subtitle font-weight-bold text-center">PATROCINADORES</h2>
                 <br />
+
                 <div class="row cards-container v-cards-container">
 
-                  <div class="col-sm-12 col-md-4 flipper">
-                    <div class="card v-card">
-                      <section class="front">
-                        <div class="card-header text-center">
-                          <strong>NET University</strong>
-                        </div>
-                        <div class="card-body">
-                          <img class="sponsor-logo-img" src="img/netuniversity.png" alt="Net University">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header text-center">
-                          <strong>NET University</strong>
-                        </div>
-                        <div class="card-body">
-                          <p class="text-justify"><a href="https://net-university.ninja/" target="_blank">Patrocinador</a> del evento, colabora concupones para ser rifados.</p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-
-
                   <div class="col-sm-12 col-md-4 v-flipper">
                     <div class="front-card v-card">
                         <div class="card-image">
-                            <div class="header-front"></div>
-                            <span class="card-title">Fundación AVANET</span>
+                            <div class="header-front text-center"><strong>JetBrains</strong></div>
                         </div>
-                        <div class="card-content">
-                          <a href="https://avanet.org/" target="_blank"><img class="img-responsive sponsor-logo-img" src="img/avanetlogo.png" alt="Avanet.org"></a>
+                        <div class="card-content text-center">
+                          <img class="img-responsive sponsor-logo-img jetbrains-logo" src="img/jetbrains_logo.png" alt="JetBrainsLogo">
                         </div>
                     </div>
                     <div class="back-card v-card">
                         <div class="card-image">
-                            <div class="header-back"></div>
-                            <span class="card-title">Fundación AVANET</span>
+                            <div class="header-back text-center"><strong>JetBrains</strong></div>
                         </div>
                         <div class="card-content">
-                            <p>Patrocinador que colabora con asesoría técnica para el evento y logistica organizativa.</p>
+                            <p>Es una <a href="https://www.jetbrains.com/" target="_blank">empresa</a> que desarrolla herramientas de desarrollo, es patrocinadora oficial, colabora con licencias que serán rifadas durantes el evento.</p>
                         </div>
                     </div>
                   </div>
@@ -342,20 +374,41 @@
                   <div class="col-sm-12 col-md-4 v-flipper">
                     <div class="front-card v-card">
                         <div class="card-image">
-                            <div class="header-front"></div>
-                            <span class="card-title">JetBrains</span>
+                            <div class="header-front text-center"><strong>NET University</strong></div>
                         </div>
                         <div class="card-content">
-                          <a href="https://www.jetbrains.com/" target="_blank"><img class="img-responsive sponsor-logo-img" src="img/jetbrainsLogo.png" alt="JetBrainsLogo" /></a>
+                          <br />
+                          <br />
+                          <img class="img-responsive sponsor-logo-img" src="img/netuniversity.png" alt="Net University">
                         </div>
                     </div>
                     <div class="back-card v-card">
                         <div class="card-image">
-                            <div class="header-back"></div>
-                            <span class="card-title">JetBrains</span>
+                            <div class="header-back text-center"><strong>NET University</strong></div>
                         </div>
                         <div class="card-content">
-                            <p>Patrocinador que colabora con licencias que serán rifadas durantes el evento.</p>
+                            <p><a href="https://net-university.ninja/" target="_blank">NET University</a> es patrocinador del evento, colabora con cupones para ser rifados.</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 v-flipper">
+                    <div class="front-card v-card">
+                        <div class="card-image">
+                            <div class="header-front text-center"><strong>Microsoft Press</strong></div>
+                        </div>
+                        <div class="card-content">
+                          <br />
+                          <br />
+                          <img class="img-responsive sponsor-logo-img" src="img/1200px-Microsoft_Press_Logopng.png" alt="Microsoft Press">
+                        </div>
+                    </div>
+                    <div class="back-card v-card">
+                        <div class="card-image">
+                            <div class="header-back text-center"><strong>Microsoft Press</strong></div>
+                        </div>
+                        <div class="card-content">
+                            <p>Es el <a href="https://www.microsoftpressstore.com/" target="_blank">brazo editorial</a> de Microsoft, y publica libros que tratan sobre diversas tecnologías actuales de Microsoft. Patrocinador oficial del evento.</p>
                         </div>
                     </div>
                   </div>
