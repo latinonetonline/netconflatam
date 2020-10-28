@@ -277,6 +277,7 @@ hr {
 .organizer-logo
 {
     max-height: 12rem;
+    z-index: -1;
 }
 
 .sponsor-logo-img
