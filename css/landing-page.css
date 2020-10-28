@@ -210,32 +210,6 @@ hr {
     text-decoration: underline;
 }
 
-/* --------------------------------------------------  Media Queries  -------------------------------------------------- */
-
-@media (min-width: 768px){
-  .navbar-expand-md .navbar-nav .nav-link {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .table {
-    font-size: 0.6rem;
-  }
-
-  .cards-container {
-      min-height: 55em!important;
-  }
-
-  .v-cards-container{
-    min-height: 75em!important;
-  }
-}
-
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-
 .logo-container {
   width: 100%;
   flex-direction: row;

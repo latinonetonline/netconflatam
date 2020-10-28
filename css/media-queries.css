@@ -1,0 +1,64 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Estra small devices */
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.6rem;
+      }
+    
+      .cards-container {
+          min-height: 50em!important;
+      }
+    
+      .v-cards-container{
+        min-height: 75em!important;
+      }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 577px) {
+    
+    .cards-container {
+        min-height: 45em!important;
+    }
+
+    .v-cards-container {
+        min-height: 70em!important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .cards-container{
+        min-height: 40em;
+    }
+
+    .v-cards-container {
+        min-height: 20em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    .cards-container {
+        min-height: 15em!important;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .cards-container {
+        min-height: 15em!important;
+    }
+
+}
+
