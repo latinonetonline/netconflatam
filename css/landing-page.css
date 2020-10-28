@@ -34,10 +34,24 @@ h3.subtitle{
   width: 8%;
 }
 
-.btn-blazor-for-all {
+.btn-dotnet {
   background-color: #512bd4;
   border-radius: 0.6rem;
   border-color: #512bd4;
+  margin: 2em 0;
+}
+
+.btn-primary:hover, .btn-dotnet:hover{
+  color: #ffffff;
+  background-color: #549be2;
+  border-color: #afafaf;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,
+.btn-dotnet:not(:disabled):not(.disabled).active, .btn-dotnet:not(:disabled):not(.disabled):active, .show>.btn-dotnet.dropdown-toggle {
+  color: #ffffff;
+  background-color: #549be2;
+  border-color: #afafaf;
 }
 
 hr {
@@ -46,17 +60,8 @@ hr {
   margin-bottom: 3rem;
 }
 
-.btn-primary:hover, .btn-blazor-for-all:hover{
-  color: #2fafda;
-  background-color: #f5ecec;
-  border-color: #c7c7c7;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,
-.btn-blazor-for-all:not(:disabled):not(.disabled).active, .btn-blazor-for-all:not(:disabled):not(.disabled):active, .show>.btn-blazor-for-all.dropdown-toggle {
-  color: #2fafda;
-  background-color: #f5ecec;
-  border-color: #c7c7c7;
+#evento {
+  margin: 1em 0 1em 0;
 }
 
 .text-subtitle {
@@ -105,7 +110,12 @@ hr {
 }
 
 .light-grey-row {
-  background-color: #fbfbfb;
+  background-color: ##f6f5f5;
+}
+
+.community-cartoons {
+  max-width: 100%;
+  padding-top: 3em;
 }
 
 .call-for-speakers-section {
@@ -274,7 +284,7 @@ hr {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .jetbrains-logo {
@@ -300,7 +310,7 @@ hr {
           backface-visibility: hidden;
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
 }
 .front {
   z-index: 2;
@@ -351,7 +361,7 @@ hr {
   
 	position: absolute;
 	top: 0;
-	left: 0;
+	/* left: 0; */
 }
 
 .front-card {
