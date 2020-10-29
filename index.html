@@ -45,6 +45,40 @@
           $(".v-flipper").click(function() {		        
             $(this).toggleClass("v-flip");
           });
+          
+          //Set the date we're counting down to
+          const countDownDate = new Date("Nov 14, 2020 9:00:00").getTime();
+    
+          //Update the count down every 1 second
+          var x = setInterval(function() {
+              // Get today's date and time
+              var now = new Date().getTime();
+              
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+              
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+              //Outputs the result
+              $(".days").html(days);
+              $(".hours").html(hours);
+              $(".minutes").html(minutes);
+              $(".seconds").html(seconds);
+
+              // If the count down is over, write counter to 0 
+              if (distance < 0) {
+                  clearInterval(x);
+                      
+                  $(".days").html(0);
+                  $(".hours").html(0);
+                  $(".minutes").html(0);
+                  $(".seconds").html(0);
+              }
+          }, 1000);
 
         });
       </script>
@@ -105,7 +139,29 @@
                 <p class="text-justify">El evento será transmitido de manera online el <strong><em>14, 21 y 28 de noviembre</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...). Basado en el evento principal .NET Conf 2020 organizado por la .NET Foundation, buscamos difundir y generar conocimiento en español.</p>
                 <br />
                 <p class="text-justify">Siguenos en redes sociales <a href="https://www.facebook.com/NetConf-Latam-112807460502694/" target="_blank"><img class="img-fluid" src="img/Facebook.svg" alt="Facebook page"></a><a href="https://twitter.com/netConfLatam" target="_blank"><img class="img-fluid" src="img/Twitter.svg" alt="Follow us on Twitter"></a></p>                
-                <a href="https://ti.to/comunidad-xamarin-en-espanol/net-conf-latinoamerica-2020" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-dotnet">Registrate</button></a>
+                
+                <article class="text-center">
+                  <div id="countdownCounter">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                  </div>
+                  <br />
+                  <a href="https://ti.to/comunidad-xamarin-en-espanol/net-conf-latinoamerica-2020" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-dotnet">Registrate</button></a>
+                </article>
               </div>
               <div class="col-sm-12 col-md-12 col-xl-4">
                 <img class="community-cartoons" src="img/cartoons_community.png" alt="Community Cartoons" style="max-width: 100%;" />
@@ -295,7 +351,7 @@
             </section>
 
             <section class="row">
-              <div class="col-sm-12 offset-md-2 col-md-8 text-center">
+              <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center">
                 <h2 id="socialMedia" class="text-subtitle font-weight-bold text-center">SOCIAL MEDIA</h2>
                 <br />
                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNetConf-Latam-112807460502694&tabs=timeline&width=600&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1490801261133993" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
