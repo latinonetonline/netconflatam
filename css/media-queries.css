@@ -12,7 +12,11 @@
       }
     
       .v-cards-container{
-        min-height: 75em!important;
+        min-height: 90em!important;
+      }
+
+      iframe {
+          max-width: 90%;
       }
 }
 
@@ -51,13 +55,21 @@
         min-height: 15em!important;
     }
 
+    .v-cards-container {
+        min-height: 37em!important;
+    }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+    
     .cards-container {
         min-height: 15em!important;
+    }
+
+    .v-cards-container {
+        min-height: 37em!important;
     }
 
 }
