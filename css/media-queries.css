@@ -7,17 +7,25 @@
         font-size: 0.6rem;
       }
     
-      .cards-container {
+    .cards-container {
           min-height: 50em!important;
-      }
+    }
     
-      .v-cards-container{
+    .v-cards-container{
         min-height: 90em!important;
-      }
+    }
 
-      iframe {
+    iframe {
           max-width: 90%;
-      }
+    }
+
+    .emoji-flag{
+        width: 20px;
+    }
+
+    .colab-cards-container {
+        min-height: 15em!important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -29,6 +37,15 @@
 
     .v-cards-container {
         min-height: 70em!important;
+    }
+    
+    .emoji-flag{
+        width: 30px;
+      }
+
+      
+    .colab-cards-container {
+        min-height: 20em!important;
     }
 }
 
@@ -46,6 +63,10 @@
     .v-cards-container {
         min-height: 20em;
     }
+
+    .emoji-flag{
+        width: 30px;
+      }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -58,7 +79,10 @@
     .v-cards-container {
         min-height: 37em!important;
     }
-
+    
+    .emoji-flag{
+        width: 35px;
+      }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -72,5 +96,9 @@
         min-height: 37em!important;
     }
 
+    
+    .emoji-flag{
+        width: 35px;
+    }
 }
 

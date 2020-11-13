@@ -31,7 +31,7 @@ h3.subtitle{
 }
 
 .emoji-flag{
-  width: 8%;
+  width: 35px;
 }
 
 .btn-dotnet {
@@ -274,6 +274,11 @@ body > .container-fluid {
   display: flex;
   justify-content: center;
   height: 14rem;
+}
+
+.colab-card-header{
+  background-color: #4b3b82;
+  border-color: #876fde;
 }
 
 .organizer-logo
