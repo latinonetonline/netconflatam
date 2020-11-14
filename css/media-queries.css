@@ -3,6 +3,10 @@
 
 /* Estra small devices */
 @media (max-width: 576px) {
+    #countdownCounter {
+        display: none;
+    }
+
     .table {
         font-size: 0.6rem;
       }
@@ -30,7 +34,10 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 577px) {
-    
+    #countdownCounter {
+        display: none;
+    }
+
     .cards-container {
         min-height: 45em!important;
     }
@@ -56,6 +63,10 @@
         padding-left: 1.5rem;
     }
 
+    #countdownCounter {
+        display: none;
+    }
+
     .cards-container{
         min-height: 40em;
     }
@@ -71,6 +82,9 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    #countdownCounter {
+        display: inline-block;
+    }
 
     .cards-container {
         min-height: 15em!important;
@@ -87,7 +101,6 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    
     .cards-container {
         min-height: 15em!important;
     }
@@ -96,7 +109,6 @@
         min-height: 37em!important;
     }
 
-    
     .emoji-flag{
         width: 35px;
     }
