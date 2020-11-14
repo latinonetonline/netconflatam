@@ -24,7 +24,7 @@ $(document).ready(function() {
     });
 
     //Set the date we're counting down to
-    var utcCountDownDate = new Date("11/14/2020 15:00:00 UTC");
+    var utcCountDownDate = new Date("21/14/2020 15:00:00 UTC");
     var localCountDownDate = utcCountDownDate.toLocaleString();
     const countDownDate = new Date(localCountDownDate).getTime();
 
