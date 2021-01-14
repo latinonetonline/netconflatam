@@ -50,7 +50,7 @@ $(document).ready(function() {
 
         // If the count down is over, write counter to 0 
         if (distance < 0) {
-            clearInterval(x);
+            clearInterval(run);
                 
             $(".days").html(0);
             $(".hours").html(0);
