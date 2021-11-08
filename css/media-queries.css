@@ -27,8 +27,19 @@
         width: 20px;
     }
 
-    .colab-cards-container {
-        min-height: 15em!important;
+    .colab-cards-container > img {
+        max-height: 150px;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+        margin: 0 auto !important;
     }
 }
 
@@ -51,8 +62,19 @@
       }
 
       
-    .colab-cards-container {
-        min-height: 20em!important;
+    .colab-cards-container > img {
+        max-height: 150px;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+        margin: 0 auto !important;
     }
 }
 

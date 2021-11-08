@@ -24,9 +24,9 @@ $(document).ready(function() {
     });
 
     //Set the date we're counting down to
-    var utcCountDownDate = new Date("11/28/2020 14:00:00 UTC");
-    var localCountDownDate = utcCountDownDate.toLocaleString();
-    const countDownDate = new Date(localCountDownDate).getTime();
+    var utcCountDownDate = new Date("11/18/2021 14:00:00 UTC");
+    var localCountDownDate = utcCountDownDate.toString();
+    const countDownDate = Date.parse(localCountDownDate);
 
     //Update the count down every 1 second
     var run = setInterval(function() {
@@ -35,6 +35,8 @@ $(document).ready(function() {
         
         // Find the distance between now and the count down date
         var distance = countDownDate - now;
+
+        //alert(distance);
         
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -59,4 +61,20 @@ $(document).ready(function() {
         }
     }, 1000);
 
+    //Navbar fixed on scroll
 });
+
+document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 200) {
+        document.getElementById('navbar-top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar-top').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
