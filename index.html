@@ -1,457 +1,528 @@
 <!doctype html>
 <html lang="en-us">
 
-    <head>
-      <!-- Meta -->
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-      <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-      <title>.NET Conf Latam 2021</title>
-      <meta name="description" content=".NET Conf Latam es un evento virtual gratuito de tres días para desarrolladores que celebra los principales lanzamientos de la plataforma de desarrollo .NET. Está coorganizado por comunidades de .NET de Latinoamérica. Ven a celebrar y aprender sobre lo que puedes hacer con .NET 6. ">
-      
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/landing-page.css"> 
-      <link rel="stylesheet" href="css/media-queries.css"> 
-      
-      <!-- load jQuery 3.2.1 -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="js/manage-landing-functionality.js" type="text/javascript"></script>
-    </head>
-    
-    <body class="has-animations">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <title>.NET Conf Latam 2021</title>
+  <meta name="description"
+    content=".NET Conf Latam es un evento virtual gratuito de tres días para desarrolladores que celebra los principales lanzamientos de la plataforma de desarrollo .NET. Está coorganizado por comunidades de .NET de Latinoamérica. Ven a celebrar y aprender sobre lo que puedes hacer con .NET 6. ">
 
-        <header>
-            <!-- Fixed navbar -->
-            <nav id="navbar-top" class="navbar navbar-expand-md navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 dotnet-navbar">
-              
-              <div class="navbar-brand" href="index.html#">
-                <a href="https://dotnet.microsoft.com/" target="_blank">
-                  <img class="nav-logo" src="img/dotnet_60x60.png" alt="dotnet logo">
-                </a>
-              </div>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html#evento">Evento<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#agenda">Agenda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#speakers">Speakers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#socialMedia">Social Media</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#organizers">Organizadores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#colaborators">Colaboradores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#sponsors">Patrocinadores</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </header>
-          
-      
-          <!-- Begin page content -->
-          <main role="main" class="container-fluid">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/landing-page.css">
+  <link rel="stylesheet" href="css/media-queries.css">
 
-            
+  <!-- load jQuery 3.2.1 -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/manage-landing-functionality.js" type="text/javascript"></script>
+</head>
 
-            <section  ection id="info" class="row banner-section light-grey-row">
+<body class="has-animations">
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav id="navbar-top"
+      class="navbar navbar-expand-md navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 dotnet-navbar">
+
+      <div class="navbar-brand" href="index.html#">
+        <a href="https://dotnet.microsoft.com/" target="_blank">
+          <img class="nav-logo" src="img/dotnet_60x60.png" alt="dotnet logo">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#evento">Evento<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#agenda">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#socialMedia">Social Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#pwa">App móvil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#organizers">Organizadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#colaborators">Colaboradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#sponsors">Patrocinadores</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 
-              <div class="col-sm-12 col-md-12 col-lg-12 offset-xl-2 col-xl-8 text-center">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
-                        <img class="d-block w-100" src="img/Banners/banner1.jpg" alt="Promo Banner" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Da click para registrarte en el evento :)" />
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
-                        <img class="d-block w-100" src="img/Banners/banner2.jpg" alt="Promo Banner" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Da click para registrarte en el evento :)" />
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
-                        <img class="d-block w-100" src="img/Banners/banner3.jpg" alt="Promo Banner" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Da click para registrarte en el evento :)" />
-                      </a>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente</span>
-                  </a>
-                </div>
-              </div>
-            </section>
-            
-            <section class="row bg-white info-sectio">
-              <div class="col-sm-12 col-md-12 offset-xl-2 col-xl-4 text-center">
-                <h2 id="evento" class="text-subtitle font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
-                <p class="text-justify"><strong>#NetConfLatam</strong> es un evento internacional en línea co-organizado por comunidades .NET de Latinoamérica enfocado en el lanzamiento de .NET 6.0, donde expertos, ponentes y miembros de las distintas comunidades darán a conocer las novedades y ventajas que ofrece esta tecnología a los desarrolladores C# en diversas áreas: web, móvil, desktop, inteligencia artificial, etc.</p>
-                <br />
-                <p class="text-justify">El evento será transmitido de manera online el <strong><em>18, 19 y 20 de noviembre</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...). Basado en el evento principal .NET Conf 2021 organizado por la .NET Foundation, buscamos difundir y generar conocimiento en español.</p>
-                <br />
-                <p class="text-justify">Siguenos en redes sociales <a href="https://www.facebook.com/NetConf-Latam-112807460502694/" target="_blank"><img class="img-fluid" src="img/Facebook.svg" alt="Facebook page"></a><a href="https://twitter.com/netConfLatam" target="_blank"><img class="img-fluid" src="img/Twitter.svg" alt="Follow us on Twitter"></a></p>                
-                
-                <article class="text-center">
-                  <div id="countdownCounter">
-                    <div>
-                        <span class="days"></span>
-                        <div class="smalltext">Days</div>
-                    </div>
-                    <div>
-                        <span class="hours"></span>
-                        <div class="smalltext">Hours</div>
-                    </div>
-                    <div>
-                        <span class="minutes"></span>
-                        <div class="smalltext">Minutes</div>
-                    </div>
-                    <div>
-                        <span class="seconds"></span>
-                        <div class="smalltext">Seconds</div>
-                    </div>
-                  </div>
-                  <br />
-                  <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-dotnet">Registrate</button></a>
-                </article>
-              </div>
-              <div class="col-sm-12 col-md-12 col-xl-4">
-                <img class="community-cartoons img-fluid" src="img/cartoons_community.png" alt="Community Cartoons" style="max-width: 100%;" />
-              </div>
-            </section>
+  <!-- Begin page content -->
+  <main role="main" class="container-fluid">
 
-            <section class="row light-grey-row">
-              <div class="col-sm-12 col-md-12 offset-xl-2 col-xl-4 call-for-speakers-section">
-                <a href="https://sessionize.com/netconflatam2021/" target="_blank">
-                  <img class="logo-call-for-speakers img-fluid" src="img/circle-call-complete.png" alt="Call For Speakers" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Agradecemos tu interés en apoyar, pero el periodo para proponer charlas ha finalizado." />
-                </a>
-              </div>
-              <div class="col-sm-12 col-md-12 col-xl-4 call-for-speakers-section text-center">
-                <h1 id="agenda" class="call-for-speakers">Call For Speakers</h1>
-                <p class="text-justify">Hola comunidad,
-                  <br />Gracias por enviar tu propuesta,
-                  <a href="https://sessionize.com/netconflatam2021/" target="_blank">
-                    el Call for Speakers en Sessionize está cerrado.
-                  </a>
-                </p>				
-                <br />
-                <p class="text-justify">
-                  Las comunidades tecnológicas somos un espacio abierto a todos aquellos que desean aprender y compartir el conocimiento. Agradecemos a todos los speakers que prepararon una charla, su tiempo, esfuerzo e interés en apoyar a la comunidad .NET de Latinoamérica.
-                </p>
-              </div>
-			  			 			  	
-              <div class="col-sm-12 offset-md-2 col-md-8">
-                <br />
-                <br />
-
-                <h1 id="agenda" class="call-for-speakers text-center">Agenda</h1>
-                <p class="text-center">Con <strong>más de 20 sesiones</strong> en vivo, es importante conocer cómo está organizada la agenda. Revísala a continuación (se ajusta y muestra <strong>en tu propia zona horaria</strong> automáticamente).</strong></p>
-                <br />
-                <br />
-				<script type="text/javascript" src="https://sessionize.com/api/v2/datsh9im/view/GridSmart"></script>
-                <br />
-                <br />
-              </div>			 		 
-            </section>
-			
-            <section class="row light-grey-row">		  
-              <div class="col-sm-12 offset-md-2 col-md-8">
-                <h1 id="speakers" class="call-for-speakers text-center">Speakers</h1>
-                <p class="text-justify">
-                  Conoce a los ponentes</a> que estarán compartiendo <strong>sus conocimientos</strong> durante el .NET Conf LATAM 2021.
-                </p>
-                <iframe src="speakers.html" style="display:block; border:none; height:100vh; width:100%;"></iframe>
-              </div>		  
-            </section>			
-
-            <section class="row light-grey-row">		  
-              <div class="col-sm-12 offset-md-2 col-md-8">
-                <h2 id="App" class="text-subtitle font-weight-bold text-center">Aplicación móvil</h2>
-                <p class="text-justify">
-                  Visita o descarga nuestra <a href="https://dotnetconflatam2021.sessionize.com/" target="_blank">Aplicación móvil</a>.
-		  <br />
-		  La aplicación móvil funciona en todos los móviles, tablets y ordenadores de sobremesa modernos. Utiliza tecnología Progressive Web Application.
-                </p>
-              </div>		  
-            </section>	
-
-            <section class="row">
-              <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center">
-                <h2 id="socialMedia" class="text-subtitle font-weight-bold text-center">SOCIAL MEDIA</h2>
-                <br />
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNetConf-Latam-112807460502694&tabs=timeline&width=600&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1490801261133993" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                &emsp;&emsp;
-                <a class="twitter-timeline" data-width="500" data-height="800" href="https://twitter.com/netConfLatam?ref_src=twsrc%5Etfw">Tweets by netConfLatam</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </section>
-                        
-            <section class="row">
-              <div class="col-sm-12 offset-md-2 col-md-8">
-                <hr />
-                <h2 id="organizers" class="text-subtitle font-weight-bold text-center">ORGANIZADORES</h2>
-                <br />
-
-                <div class="row cards-container">
-                  <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-1 col-xl-4 flipper">
-                    <div class="card">
-                      <section class="front">
-                        <div class="card-header text-center">
-                          <strong>Comunidad Xamarin en Espa&#241;ol</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo img-fluid" src="img/Xamarin_Esp.png" alt="Xamarin Esp">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header text-center">
-                          <strong>Comunidad Xamarin en Espa&#241;ol</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <p class="text-justify">Somos la comunidad de <a href="https://www.facebook.com/groups/xamarindiplomadoitc/" target="_blank">Xamarin en Espa&#241;ol</a>, estamos abiertos a todos los desarrolladores interesados en aprender desarrollo movil, utilizando C# como lenguaje. Compartimos la pasión y el buen gusto por las tecnologías Microsoft .NET y todo su ecosistema.</p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-2 col-xl-4 flipper">
-                    <div class="card">
-                      <section class="front">
-                        <div class="card-header text-center">
-                          <strong>Latino NET Online</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo img-fluid" src="img/latinonetlogo.png" alt="Latino net">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header text-center">
-                          <strong>Latino NET Online</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <p class="text-justify">Somos la comunidad virtual de .NET para <a href="https://latinonet.online/" target="_blank">America Latina</a>, estamos conformados por miembros de varias comunidades .NET. Realizamos webinars cada sabado, abordamos las tecnologías .NET y todo el ecosistema a su alrededor.</p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-
-                </div>
-                
-              </div>
-            </section>
-            
-            <br />
-            <br />
-            <br />
-
-            <section class="row">
-              <div class="col-sm-12 offset-md-2 col-md-8">
-                <hr />
-                <h2 id="colaborators" class="text-subtitle font-weight-bold text-center">COLABORADORES</h2>
-                <br />
-
-                <div class="row cards-container colab-cards-container">
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="card">
-                      <section class="front">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo img-fluid" src="img/asp_dotnet_esp.png" alt="dotnet Esp">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <p class="text-justify">
-                            <a href="https://www.facebook.com/groups/aspmvc.es/about/" target="_blank">Comunidad virtual</a> en espa&#241;ol de aprendizaje y compartimiento de experiencias y conocimientos sobre el mundo de desarrollo web con tecnologías Microsoft. Creada inicialmente con enfoque en ASP.NET MVC
-                          </p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="card">
-                      <section class="front">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Secretos Xamarin</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo img-fluid" src="img/blazorlogo.png" alt="Secretos Xamarin">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Secretos Xamarin</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <p class="text-justify">
-                            <a href="https://www.facebook.com/groups/xamarinenespanol/" target="_blank">Comunidad virtual</a> en espa&#241;ol de desarrolladores Xamarin. Nuestra misión: Volvernos mejores desarrolladores con Xamarin, con el fin de que podamos prosperar, ayudando a otros.
-                          </p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-
-            <br />
-            <br />
-            <br />
-
-            <section class="row">
-              <div class="col-sm-12 offset-md-2 col-md-8">
-                <hr />
-                <h2 id="sponsors" class="text-subtitle font-weight-bold text-center">PATROCINADORES</h2>
-                <br />
-
-                <div class="row cards-container v-cards-container">
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-front text-center"><strong>Microsoft Press</strong></div>
-                        </div>
-                        <div class="card-content">
-                          <br />
-                          <br />
-                          <img class="img-fluid sponsor-logo-img" src="img/Sponsors/1200px-Microsoft_Press_Logopng.png" alt="Microsoft Press">
-                        </div>
-                    </div>
-                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-back text-center"><strong>Microsoft Press</strong></div>
-                        </div>
-                        <div class="card-content">
-                            <p>Es el <a href="https://www.microsoftpressstore.com/" target="_blank">brazo editorial</a> de Microsoft, y publica libros que tratan sobre diversas tecnologías actuales de Microsoft. Su generoso apoyo es el aporte de cupones (canjeables por eBooks), los cuales ser&#225;n rifados en el evento.</p>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-front text-center"><strong>.NET Foundation</strong></div>
-                        </div>
-                        <div class="card-content">
-                          <img class="img-fluid sponsor-logo-img" src="img/Sponsors/1200px-.NET_Foundation_Logo.svg.png" alt="DotNet Foundation" style="max-width: 50%;" />
-                        </div>
-                    </div>
-                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-back text-center"><strong>.NET Foundation</strong></div>
-                        </div>
-                        <div class="card-content">
-                            <p><a href="https://dotnetfoundation.org/" target="_blank">Organización</a> incorporada por Microsoft en 2014, para mejorar el desarrollo de software de código abierto y la colaboración en torno a .NET Framework. Su cuantioso apoyo al evento radica en "Streamming Support" por medio del canal de YouTube de la .NET Foundation.</p>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-front text-center"><strong>JetBrains</strong></div>
-                        </div>
-                        <div class="card-content text-center">
-                          <img class="img-fluid sponsor-logo-img jetbrains-logo" src="img/Sponsors/jetbrains_logo.png" alt="JetBrainsLogo">
-                        </div>
-                    </div>
-                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-back text-center"><strong>JetBrains</strong></div>
-                        </div>
-                        <div class="card-content">
-
-                            <p><a href="https://www.jetbrains.com/" target="_blank">Compa&#241;ía</a> de desarrollo de software cuyas herramientas están dirigidas a ingenieros de software. Ofrece una familia de IDEs para: .NET, Java, Kotlin, Ruby, Python, PHP, C, C ++, Objective-C, Go y JavaScript. Su valioso aporte en este evento, son licencias para el toolkit <a href="https://www.jetbrains.com/dotnet/" target="_blank">dotUltimate</a>.</p>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-front text-center"><strong>El Camino Dev</strong></div>
-                        </div>
-                        <div class="card-content">
-                          <img class="img-fluid sponsor-logo-img" src="img/Sponsors/elcaminodev.png" alt="El Camino Dev" style="max-width: 50%;" />
-                        </div>
-                    </div>
-                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-back text-center"><strong>El Camino Dev</strong></div>
-                        </div>
-                        <div class="card-content">
-                            <p><a href="https://elcamino.dev/" target="_blank">Academia</a> de entrenamiento en l&#237;nea para desarrolladores, en este evento colabora a la comunidad brindando cupones de sus cursos para ser rifados.</p>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-front text-center"><strong>NET University</strong></div>
-                        </div>
-                        <div class="card-content">
-                          <br />
-                          <br />
-                          <img class="img-fluid sponsor-logo-img" src="img/Sponsors/netuniversity.png" alt="Net University">
-                        </div>
-                    </div>
-                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-back text-center"><strong>NET University</strong></div>
-                        </div>
-                        <div class="card-content">
-                            <p><a href="https://net-university.ninja/" target="_blank">Academia</a> en l&#237;nea que brinda capacitaci&#243;n a inform&#225;ticos, se suma colaborando con cupones de sus cursos para ser rifados.</p>
-                        </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </section>
-          </main>
-      
-          <footer class="footer">
-            <div class="container text-center">
-              <span class="text-white">.NET Conf Latam 2021. Código de conducta | Política de privacidad </span>
+    <section ection id="info" class="row banner-section light-grey-row">
+      <div class="col-sm-12 col-md-12 col-lg-12 offset-xl-2 col-xl-8 text-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
+                <img class="d-block w-100" src="img/Banners/banner1.jpg" alt="Promo Banner" data-toggle="popover"
+                  data-trigger="hover" data-placement="bottom"
+                  data-content="Da click para registrarte en el evento :)" />
+              </a>
             </div>
-          </footer>
-          
-    </body>
+            <div class="carousel-item">
+              <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
+                <img class="d-block w-100" src="img/Banners/banner2.jpg" alt="Promo Banner" data-toggle="popover"
+                  data-trigger="hover" data-placement="bottom"
+                  data-content="Da click para registrarte en el evento :)" />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
+                <img class="d-block w-100" src="img/Banners/banner3.jpg" alt="Promo Banner" data-toggle="popover"
+                  data-trigger="hover" data-placement="bottom"
+                  data-content="Da click para registrarte en el evento :)" />
+              </a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row bg-white info-sectio">
+      <div class="col-sm-12 col-md-12 offset-xl-2 col-xl-4 text-center">
+        <h2 id="evento" class="text-subtitle font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
+        <p class="text-justify"><strong>#NetConfLatam</strong> es un evento internacional en línea co-organizado por
+          comunidades .NET de Latinoamérica enfocado en el lanzamiento de .NET 6.0, donde expertos, ponentes y miembros
+          de las distintas comunidades darán a conocer las novedades y ventajas que ofrece esta tecnología a los
+          desarrolladores C# en diversas áreas: web, móvil, desktop, inteligencia artificial, etc.</p>
+        <br />
+        <p class="text-justify">El evento será transmitido de manera online el <strong><em>18, 19 y 20 de
+              noviembre</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades
+          organizadoras (YouTube, Twitch, Facebook, etc...). Basado en el evento principal .NET Conf 2021 organizado por
+          la .NET Foundation, buscamos difundir y generar conocimiento en español.</p>
+        <br />
+        <p class="text-justify">Siguenos en redes sociales <a
+            href="https://www.facebook.com/NetConf-Latam-112807460502694/" target="_blank"><img class="img-fluid"
+              src="img/Facebook.svg" alt="Facebook page"></a><a href="https://twitter.com/netConfLatam"
+            target="_blank"><img class="img-fluid" src="img/Twitter.svg" alt="Follow us on Twitter"></a></p>
+
+        <article class="text-center">
+          <div id="countdownCounter">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+          <br />
+          <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank"><button
+              type="button" class="btn btn-primary btn-lg btn-dotnet">Registrate</button></a>
+        </article>
+      </div>
+      <div class="col-sm-12 col-md-12 col-xl-4">
+        <img class="community-cartoons img-fluid" src="img/cartoons_community.png" alt="Community Cartoons"
+          style="max-width: 100%;" />
+      </div>
+    </section>
+
+    <section class="row light-grey-row">
+      <div class="col-sm-12 offset-md-2 col-md-8">
+        <br />
+        <br />
+
+        <h1 id="agenda" class="call-for-speakers text-center">Agenda</h1>
+        <p class="text-center">Con <strong>más de 20 sesiones</strong> en vivo, es importante conocer cómo está
+          organizada la agenda. Revísala a continuación (se ajusta y muestra <strong>en tu propia zona horaria</strong>
+          automáticamente).</strong></p>
+        <br />
+        <br />
+        <script type="text/javascript" src="https://sessionize.com/api/v2/datsh9im/view/GridSmart"></script>
+        <br />
+        <br />
+      </div>
+    </section>
+
+    <section class="row light-grey-row">
+      <div class="col-sm-12 offset-md-2 col-md-8">
+        <h1 id="speakers" class="call-for-speakers text-center">Speakers</h1>
+        <p class="text-justify">
+          Conoce a los ponentes</a> que estarán compartiendo <strong>sus conocimientos</strong> durante el .NET Conf
+          LATAM 2021.
+        </p>
+        <iframe src="speakers.html" style="display:block; border:none; height:100vh; width:100%;"></iframe>
+      </div>
+    </section>
+
+    <section class="row light-grey-row">
+      <div class="col-sm-12 col-md-12 col-xl-12">
+        <h1 id="pwa" class="call-for-speakers text-center">Aplicación móvil</h1>
+      </div>
+      <div class="col-sm-12 col-md-6 offset-xl-4 col-xl-2">
+        <a href="https://sessionize.com/netconflatam2021/" target="_blank">
+          <a href="https://dotnetconflatam2021.sessionize.com" target="_blank"><img src="./img/NetConfPwa.gif" style="height:400px;" /></a>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <p class="text-justify">
+          Visita o descarga nuestra <a href="https://dotnetconflatam2021.sessionize.com/" target="_blank">Aplicación
+            móvil</a>.
+          <br />
+          La aplicación móvil funciona en todos los móviles, tablets y ordenadores de sobremesa modernos. Utiliza
+          tecnología Progressive Web Application.
+        </p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center">
+        <h2 id="socialMedia" class="text-subtitle font-weight-bold text-center">SOCIAL MEDIA</h2>
+        <br />
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNetConf-Latam-112807460502694&tabs=timeline&width=600&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1490801261133993"
+          width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowTransparency="true" allow="encrypted-media"></iframe>
+        &emsp;&emsp;
+        <a class="twitter-timeline" data-width="500" data-height="800"
+          href="https://twitter.com/netConfLatam?ref_src=twsrc%5Etfw">Tweets by netConfLatam</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-sm-12 offset-md-2 col-md-8">
+        <hr />
+        <h2 id="organizers" class="text-subtitle font-weight-bold text-center">ORGANIZADORES</h2>
+        <br />
+
+        <div class="row cards-container">
+          <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-1 col-xl-4 flipper">
+            <div class="card">
+              <section class="front">
+                <div class="card-header text-center">
+                  <strong>Comunidad Xamarin en Espa&#241;ol</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <img class="organizer-logo img-fluid" src="img/Xamarin_Esp.png" alt="Xamarin Esp">
+                </div>
+              </section>
+              <section class="back">
+                <div class="card-header text-center">
+                  <strong>Comunidad Xamarin en Espa&#241;ol</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <p class="text-justify">Somos la comunidad de <a
+                      href="https://www.facebook.com/groups/xamarindiplomadoitc/" target="_blank">Xamarin en
+                      Espa&#241;ol</a>, estamos abiertos a todos los desarrolladores interesados en aprender desarrollo
+                    movil, utilizando C# como lenguaje. Compartimos la pasión y el buen gusto por las tecnologías
+                    Microsoft .NET y todo su ecosistema.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-2 col-xl-4 flipper">
+            <div class="card">
+              <section class="front">
+                <div class="card-header text-center">
+                  <strong>Latino NET Online</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <img class="organizer-logo img-fluid" src="img/latinonetlogo.png" alt="Latino net">
+                </div>
+              </section>
+              <section class="back">
+                <div class="card-header text-center">
+                  <strong>Latino NET Online</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <p class="text-justify">Somos la comunidad virtual de .NET para <a href="https://latinonet.online/"
+                      target="_blank">America Latina</a>, estamos conformados por miembros de varias comunidades .NET.
+                    Realizamos webinars cada sabado, abordamos las tecnologías .NET y todo el ecosistema a su alrededor.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <section class="row">
+      <div class="col-sm-12 offset-md-2 col-md-8">
+        <hr />
+        <h2 id="colaborators" class="text-subtitle font-weight-bold text-center">COLABORADORES</h2>
+        <br />
+
+        <div class="row cards-container colab-cards-container">
+
+          <div class="col-sm-12 col-md-4 v-flipper">
+            <div class="card">
+              <section class="front">
+                <div class="card-header colab-card-header text-center">
+                  <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <img class="organizer-logo img-fluid" src="img/asp_dotnet_esp.png" alt="dotnet Esp">
+                </div>
+              </section>
+              <section class="back">
+                <div class="card-header colab-card-header text-center">
+                  <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <p class="text-justify">
+                    <a href="https://www.facebook.com/groups/aspmvc.es/about/" target="_blank">Comunidad virtual</a> en
+                    espa&#241;ol de aprendizaje y compartimiento de experiencias y conocimientos sobre el mundo de
+                    desarrollo web con tecnologías Microsoft. Creada inicialmente con enfoque en ASP.NET MVC
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 v-flipper">
+            <div class="card">
+              <section class="front">
+                <div class="card-header colab-card-header text-center">
+                  <strong>Comunidad Secretos Xamarin</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <img class="organizer-logo img-fluid" src="img/blazorlogo.png" alt="Secretos Xamarin">
+                </div>
+              </section>
+              <section class="back">
+                <div class="card-header colab-card-header text-center">
+                  <strong>Comunidad Secretos Xamarin</strong>
+                </div>
+                <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                  data-content="Click para más info">
+                  <p class="text-justify">
+                    <a href="https://www.facebook.com/groups/xamarinenespanol/" target="_blank">Comunidad virtual</a> en
+                    espa&#241;ol de desarrolladores Xamarin. Nuestra misión: Volvernos mejores desarrolladores con
+                    Xamarin, con el fin de que podamos prosperar, ayudando a otros.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <section class="row">
+      <div class="col-sm-12 offset-md-2 col-md-8">
+        <hr />
+        <h2 id="sponsors" class="text-subtitle font-weight-bold text-center">PATROCINADORES</h2>
+        <br />
+
+        <div class="row cards-container v-cards-container">
+
+          <div class="col-sm-12 col-md-4 v-flipper">
+            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-front text-center"><strong>Microsoft Press</strong></div>
+              </div>
+              <div class="card-content">
+                <br />
+                <br />
+                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/1200px-Microsoft_Press_Logopng.png"
+                  alt="Microsoft Press">
+              </div>
+            </div>
+            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-back text-center"><strong>Microsoft Press</strong></div>
+              </div>
+              <div class="card-content">
+                <p>Es el <a href="https://www.microsoftpressstore.com/" target="_blank">brazo editorial</a> de
+                  Microsoft, y publica libros que tratan sobre diversas tecnologías actuales de Microsoft. Su generoso
+                  apoyo es el aporte de cupones (canjeables por eBooks), los cuales ser&#225;n rifados en el evento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 v-flipper">
+            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-front text-center"><strong>.NET Foundation</strong></div>
+              </div>
+              <div class="card-content">
+                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/1200px-.NET_Foundation_Logo.svg.png"
+                  alt="DotNet Foundation" style="max-width: 50%;" />
+              </div>
+            </div>
+            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-back text-center"><strong>.NET Foundation</strong></div>
+              </div>
+              <div class="card-content">
+                <p><a href="https://dotnetfoundation.org/" target="_blank">Organización</a> incorporada por Microsoft en
+                  2014, para mejorar el desarrollo de software de código abierto y la colaboración en torno a .NET
+                  Framework. Su cuantioso apoyo al evento radica en "Streamming Support" por medio del canal de YouTube
+                  de la .NET Foundation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 v-flipper">
+            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-front text-center"><strong>JetBrains</strong></div>
+              </div>
+              <div class="card-content text-center">
+                <img class="img-fluid sponsor-logo-img jetbrains-logo" src="img/Sponsors/jetbrains_logo.png"
+                  alt="JetBrainsLogo">
+              </div>
+            </div>
+            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-back text-center"><strong>JetBrains</strong></div>
+              </div>
+              <div class="card-content">
+
+                <p><a href="https://www.jetbrains.com/" target="_blank">Compa&#241;ía</a> de desarrollo de software
+                  cuyas herramientas están dirigidas a ingenieros de software. Ofrece una familia de IDEs para: .NET,
+                  Java, Kotlin, Ruby, Python, PHP, C, C ++, Objective-C, Go y JavaScript. Su valioso aporte en este
+                  evento, son licencias para el toolkit <a href="https://www.jetbrains.com/dotnet/"
+                    target="_blank">dotUltimate</a>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 v-flipper">
+            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-front text-center"><strong>El Camino Dev</strong></div>
+              </div>
+              <div class="card-content">
+                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/elcaminodev.png" alt="El Camino Dev"
+                  style="max-width: 50%;" />
+              </div>
+            </div>
+            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-back text-center"><strong>El Camino Dev</strong></div>
+              </div>
+              <div class="card-content">
+                <p><a href="https://elcamino.dev/" target="_blank">Academia</a> de entrenamiento en l&#237;nea para
+                  desarrolladores, en este evento colabora a la comunidad brindando cupones de sus cursos para ser
+                  rifados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 v-flipper">
+            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-front text-center"><strong>NET University</strong></div>
+              </div>
+              <div class="card-content">
+                <br />
+                <br />
+                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/netuniversity.png" alt="Net University">
+              </div>
+            </div>
+            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+              data-content="Click para más info">
+              <div class="card-image">
+                <div class="header-back text-center"><strong>NET University</strong></div>
+              </div>
+              <div class="card-content">
+                <p><a href="https://net-university.ninja/" target="_blank">Academia</a> en l&#237;nea que brinda
+                  capacitaci&#243;n a inform&#225;ticos, se suma colaborando con cupones de sus cursos para ser rifados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <span class="text-white">.NET Conf Latam 2021. Código de conducta | Política de privacidad </span>
+    </div>
+  </footer>
+
+</body>
+
 </html>
