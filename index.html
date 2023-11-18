@@ -242,57 +242,63 @@
         color: #ffffff;
       }
 
-      .post-event-card {
-          color: #ffffffff;
-          border: none;
-          border-radius: 8px;;
-          grid-column: span 4;
-          text-decoration: none;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 1rem;
-          text-align: center;
-          height: 246px;
+      .card-body {
+        padding-top: 4.7em;
       }
+
       .post-event-card-dotnet {
           background: linear-gradient(128.87deg, #D600AA 14.05%, #512BD4 89.3%);
+          border: none;
+          border-radius: 8px;
+          min-height: 16em;
       }
+        .post-event-card-dotnet a {
+          text-align: center;
+          text-decoration: none;
+        }
+          .post-event-card-dotnet a img {
+            text-align: center;
+          }
 
       .post-event-card-youtube {
           background: linear-gradient(128.87deg, #292929 14.05%, #0A0A0A 89.3%);
+          border: none;
+          border-radius: 8px;
+          min-height: 16em;
       }
+        .post-event-card-youtube a {
+          text-align: center;
+          text-decoration: none;          
+        }
+        .post-event-card-youtube a img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
 
-      .post-event-card-dotnet > p.font-display-2 {
+      .post-event-card-dotnet > .font-display-2 {
           line-height: 2.7rem;
-      }
-
-      .post-event-card > p {
-          color: #ffffffff;
+          text-align: center;
       }
 
       .font-display-2 {
-          font-size: 4.25rem;
-          font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
-          font-weight: 700;
-          font-style: normal;
-          line-height: 4.625rem;
-          text-decoration: none;
-          text-transform: none;
-          color: #ffffffff;
+        color: #ffffffff;  
+        font-size: 3.6rem;
+        font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: none;
       }
 
       .font-subtitle-2 {
-          font-size: 1.125rem;
-          font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
-          font-weight: 600;
-          font-style: normal;
-          line-height: 1.688rem;
-          text-decoration: none;
-          text-transform: none;
-          color: #ffffffff;
+        color: #ffffffff;  
+        font-size: 1.125rem;
+        font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: none;
+        
       }
 
       h4, .font-title-3 {
@@ -367,8 +373,8 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row"></th>
-                  <td>XXXXX XXXXX</td>
+                  <th scope="row"><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /></th>
+                  <td>Fernando Sonego</td>
                   <td>Blazor</td>
                   <td>23:10 hrs UTC</td>
                 </tr>
@@ -422,8 +428,8 @@
                   <td>16:40 hrs UTC</td>
                 </tr>
                 <tr>
-                  <th scope="row"></th>
-                  <td>XXXXX XXXXX</td>
+                  <th scope="row"><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></th>
+                  <td>Hector Perez</td>
                   <td>Visual Studio</td>
                   <td>17:20 hrs UTC</td>
                 </tr>
@@ -437,25 +443,37 @@
       <br />
 
       <section class="row mt-5 mb-5">
-        <div class="col">
-          <a class="post-event-card post-event-card-dotnet" href="https://get.dot.net/8" target="_blank">
-            <p class="font-display-2">Descarga</p>
-            <p class="font-subtitle-2">.NET 8</p>
-          </a>
+        <div class="col mb-3">
+          <div class="card post-event-card-dotnet">
+            <div class="card-body">
+              <a href="https://get.dot.net/8" target="_blank">
+                <h5 class="card-title font-display-2">Descarga</h5>
+                <p class="card-text font-subtitle-2">.NET 8</p>
+              </a>
+            </div>
+          </div>
         </div>
         
-        <div class="col">
-          <a class="post-event-card post-event-card-youtube" href="https://www.youtube.com/@LatinoNetOnline" target="_blank">
-            <img class="post-event-card-logo" src="img/icons/youtube-dark.svg" alt="YouTube logo">
-            <p class="font-subtitle-2">Mira en YouTube</p>
-          </a>
+        <div class="col mb-3">          
+          <div class="card post-event-card-youtube">
+            <div class="card-body">
+              <a href="https://www.youtube.com/@LatinoNetOnline" target="_blank">
+                <img class="post-event-card-logo" src="img/icons/youtube-dark.svg" alt="YouTube logo">
+                <p class="font-subtitle-2">Mira en YouTube</p>
+              </a>
+            </div>
+          </div>
         </div>
         
-        <div class="col">
-          <a class="post-event-card post-event-card-dotnet" href="https://aka.ms/learn-dotnet-8" target="_blank">
-            <p class="font-display-2">Aprende</p>
-            <p class="font-subtitle-2">.NET 8</p>
-          </a>
+        <div class="col mb-3">
+          <div class="card post-event-card-dotnet">
+            <div class="card-body">
+              <a href="https://aka.ms/learn-dotnet-8" target="_blank">
+                <h5 class="card-title font-display-2">Aprende</h5>
+                <p class="card-text font-subtitle-2">.NET 8</p>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
