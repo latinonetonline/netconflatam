@@ -1,517 +1,499 @@
+
 <!doctype html>
-<html lang="en-us">
-
-<head>
-    <!-- Meta -->
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Bottom navbar example · Bootstrap v5.0</title>
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <title>.NET Conf Latam 2021</title>
-    <meta name="description"
-          content=".NET Conf Latam es un evento virtual gratuito de tres días para desarrolladores que celebra los principales lanzamientos de la plataforma de desarrollo .NET. Está coorganizado por comunidades de .NET de Latinoamérica. Ven a celebrar y aprender sobre lo que puedes hacer con .NET 6. ">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/landing-page.css">
-    <link rel="stylesheet" href="css/media-queries.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta name="theme-color" content="#7952b3">
 
-    <!-- load jQuery 3.2.1 -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    <script src="js/manage-landing-functionality.js" type="text/javascript"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</head>
+    <style>
 
-<body class="has-animations">
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVnsrPMBTTA.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVnsqPMBTTA.woff2) format('woff2');
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVnskPMA.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
 
-  <header>
-    <!-- Fixed navbar -->
-    <nav id="navbar-top"
-      class="navbar navbar-expand-md navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 dotnet-navbar">
+      html {
+        background: #1D2B64;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
 
-      <div class="navbar-brand" href="index.html#">
-        <a href="https://dotnet.microsoft.com/" target="_blank">
-          <img class="nav-logo" src="img/dotnet_60x60.png" alt="dotnet logo">
-        </a>
+      body {
+        background-color: unset;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .title {
+        font-family: "Space Grotesk", Helvetica, Arial, sans-serif;;
+        font-weight: 700;
+        font-style: normal;
+        color: #ffffff;
+      }
+
+      .intro-text {
+        color: blue;
+        font-weight: 700;
+      }
+
+      .mt-10 {
+        margin-top: 10em!important;
+        margin-bottom: 5em!important;
+      }
+
+      .table-title {
+        color: #fff;
+      }
+
+      .bg-blue {
+        background: #e3dedf;
+        border-radius: 2em;
+        color: #ffffff;
+      }
+
+      .post-event-card {
+          color: #ffffffff;
+          border: none;
+          border-radius: 8px;;
+          grid-column: span 4;
+          text-decoration: none;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          text-align: center;
+          height: 246px;
+      }
+      .post-event-card-dotnet {
+          background: linear-gradient(128.87deg, #D600AA 14.05%, #512BD4 89.3%);
+      }
+
+      .post-event-card-youtube {
+          background: linear-gradient(128.87deg, #292929 14.05%, #0A0A0A 89.3%);
+      }
+
+      .post-event-card-dotnet > p.font-display-2 {
+          line-height: 2.7rem;
+      }
+
+      .post-event-card > p {
+          color: #ffffffff;
+      }
+
+      .font-display-2 {
+          font-size: 4.25rem;
+          font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 4.625rem;
+          text-decoration: none;
+          text-transform: none;
+          color: #ffffffff;
+      }
+
+      .font-subtitle-2 {
+          font-size: 1.125rem;
+          font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+          font-weight: 600;
+          font-style: normal;
+          line-height: 1.688rem;
+          text-decoration: none;
+          text-transform: none;
+          color: #ffffffff;
+      }
+
+      h4, .font-title-3 {
+          font-size: 1.5rem;
+          font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          line-height: 2.25rem;
+          text-decoration: none;
+          text-transform: none;
+          color: #ffffffff;
+      }
+
+      .dotnetconf-hashtag {
+          color: #fde20d;
+          position: relative;
+      }
+      
+      .emoji-flag{
+        width: 35px;
+      }
+
+      .justified-text {
+        text-align: justify;
+      }
+    </style>
+    
+  </head>
+  <body>
+        
+    <main class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-1 mt-5 title text-center">.NET Conf 2023</h1>
+          <h3 class="title text-center">Latino NET Online</h3>
+        </div>
+
+        <div class="row mt-10">
+          <div class="col">        
+            <article class="bg-blue">
+              <div class="p-5">
+                <p class="justified-text intro-text">.NET Conf ha sido desde sus inicios un evento virtual y este año celebraremos la decimotercera conferencia en línea. Siempre nos esforzamos por crear una experiencia virtual atractiva y de alta calidad para los desarrolladores de habla hispana.</p>
+                <p class="justified-text intro-text">Preparate para una experiencia dinámica con una impresionante selección de sesiones en vivo con oradores de renombre en la comunidad .NET, vamos a profundizar en los tema más importantes. Unete para mantenerte a la vanguardia con ideas y consejos para mejorar tu desarrollo de Software. Creemos que la comunidad somos Todos y esta hecha por todos, independientemente del país en el que te encuentres.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">        
+            <img src="./img/hero-graphic.png" class="img-fluid pt-5" alt="NET 8 hero">
+          </div>       
+        </div>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html#evento">Evento<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#agenda">Agenda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#speakers">Speakers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#socialMedia">Social Media</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#pwa">App móvil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#organizers">Organizadores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#colaborators">Colaboradores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#sponsors">Patrocinadores</a>
-          </li>
-        </ul>
+
+      <section class="row">
+        <div class="col">
+          <h3 class="title text-center">Agenda</h3>
+
+          <br />
+          <br />
+
+          <h5 class="text-center table-title">Viernes 8 de Diciembre 2023</h4>
+
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Nombre el Speaker</th>
+                <th scope="col">Novadades a exponer</th>
+                <th scope="col">Horario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>XXXXX XXXXX</td>
+                <td>Blazor</td>
+                <td>23:10 hrs UTC</td>
+              </tr>
+              <tr>
+                <th scope="row"><img class="emoji-flag" src="img/flags/mx.png" alt="mx flag" title="Mexico" /></th>
+                <td>Ricardo Josué Perez</td>
+                <td>.NET Core</td>
+                <td>23:50 hrs UTC</td>
+              </tr>
+              <tr>
+                <th scope="row"><img class="emoji-flag" src="img/flags/mx.png" alt="mx flag" title="Mexico" /></th>
+                <td>Luis Beltrán</td>
+                <td>.NET MAUI</td>
+                <td>00:30 hrs UTC</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br />
+
+
+          <h5 class="text-center table-title">Sabado 9 de Diciembre 2023</h4>
+
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Nombre el Speaker</th>
+                <th scope="col">Novadades a exponer</th>
+                <th scope="col">Horario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><img class="emoji-flag" src="img/flags/ni.png" alt="mx flag" title="Nicaragua" /></th>
+                <td>Pastor Cortés</td>
+                <td>Entity Framework Core</td>
+                <td>15:20 hrs UTC</td>
+              </tr>
+              <tr>
+                <th scope="row"><img class="emoji-flag" src="img/flags/gt.png" alt="mx flag" title="Guatemala" /></th>
+                <td>Geovani de León</td>
+                <td>C# 12</td>
+                <td>16:00 hrs UTC</td>
+              </tr>
+              <tr>
+                <th scope="row"><img class="emoji-flag" src="img/flags/mx.png" alt="mx flag" title="Mexico" /></th>
+                <td>Jorge Levy</td>
+                <td>Azure Functions</td>
+                <td>16:40 hrs UTC</td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>XXXXX XXXXX</td>
+                <td>Visual Studio</td>
+                <td>17:20 hrs UTC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <br />
+
+      <section class="row mt-5 mb-5">
+        <div class="col">
+          <a class="post-event-card post-event-card-dotnet" href="https://get.dot.net/8" target="_blank">
+            <p class="font-display-2">Descarga</p>
+            <p class="font-subtitle-2">.NET 8</p>
+          </a>
+        </div>
+        
+        <div class="col">
+          <a class="post-event-card post-event-card-youtube" href="https://www.youtube.com/@LatinoNetOnline" target="_blank">
+            <img class="post-event-card-logo" src="img/icons/youtube-dark.svg" alt="YouTube logo">
+            <p class="font-subtitle-2">Mira en YouTube</p>
+          </a>
+        </div>
+        
+        <div class="col">
+          <a class="post-event-card post-event-card-dotnet" href="https://aka.ms/learn-dotnet-8" target="_blank">
+            <p class="font-display-2">Aprende</p>
+            <p class="font-subtitle-2">.NET 8</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="row">
+        <section class="col">
+          <p class="text-end font-title-3 mt-5"><img src="img/icons/icon-x.png" alt="X icon" width="32" height="32" />&nbsp;Sigue el evento <a class="dotnetconf-hashtag" href="https://twitter.com/search?q=dotnetconf&amp;src=typed_query&amp;f=live" target="_blank">#dotnetconf</a></p>
+        </section>
+      </section>
+
+      <br />
+      <br />
+    </main>
+
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://latinonet.online/">Latino NET Online</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://dotnetfoundation.org/" target="_blank">.NET Foundation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://learn.microsoft.com/en-us/dotnet/" target="_blank">Documentation .NET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/@LatinoNetOnline" target="_blank">Canal de YouTube</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-  </header>
 
-
-  <!-- Begin page content -->
-  <main role="main" class="container-fluid">
-
-    <section ection id="info" class="row banner-section light-grey-row">
-      <div class="col-sm-12 col-md-12 col-lg-12 offset-xl-2 col-xl-8 text-center">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
-                <img class="d-block w-100" src="img/Banners/banner1.png" alt="Promo Banner" data-toggle="popover"
-                  data-trigger="hover" data-placement="bottom"
-                  data-content="Da click para registrarte en el evento :)" />
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank">
-                <img class="d-block w-100" src="img/Banners/banner2.png" alt="Promo Banner" data-toggle="popover"
-                  data-trigger="hover" data-placement="bottom"
-                  data-content="Da click para registrarte en el evento :)" />
-              </a>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="row bg-white info-sectio">
-      <div class="col-sm-12 col-md-12 offset-xl-2 col-xl-4 text-center">
-        <h2 id="evento" class="text-subtitle font-weight-bold text-center">Por la comunidad y para la comunidad</h2>
-        <p class="text-justify"><strong>#NetConfLatam</strong> es un evento internacional en línea co-organizado por
-          comunidades .NET de Latinoamérica enfocado en el lanzamiento de .NET 6.0, donde expertos, ponentes y miembros
-          de las distintas comunidades darán a conocer las novedades y ventajas que ofrece esta tecnología a los
-          desarrolladores C# en diversas áreas: web, móvil, desktop, inteligencia artificial, etc.</p>
-        <br />
-        <p class="text-justify">El evento será transmitido de manera online el <strong><em>18, 19 y 20 de
-              noviembre</em></strong> para toda Latinoamérica y el mundo en el <a
-            href="https://www.youtube.com/c/NETFoundation" target="_blank">canal de la .NET Foundation en YouTube.</a>
-          Basado en el evento principal .NET Conf 2021 organizado por
-          la .NET Foundation, buscamos difundir y generar conocimiento en español.</p>
-        <br />
-        <p class="text-justify">Siguenos en redes sociales <a
-            href="https://www.facebook.com/NetConf-Latam-112807460502694/" target="_blank"><img class="img-fluid"
-              src="img/Facebook.svg" alt="Facebook page"></a><a href="https://twitter.com/netConfLatam"
-            target="_blank"><img class="img-fluid" src="img/Twitter.svg" alt="Follow us on Twitter"></a></p>
-
-        <article class="text-center">
-          <div id="countdownCounter">
-            <div>
-              <span class="days"></span>
-              <div class="smalltext">Days</div>
-            </div>
-            <div>
-              <span class="hours"></span>
-              <div class="smalltext">Hours</div>
-            </div>
-            <div>
-              <span class="minutes"></span>
-              <div class="smalltext">Minutes</div>
-            </div>
-            <div>
-              <span class="seconds"></span>
-              <div class="smalltext">Seconds</div>
-            </div>
-          </div>
-          <br />
-          <a href="https://www.eventbrite.com.mx/e/net-conf-latam-2021-tickets-177684979557" target="_blank"><button
-              type="button" class="btn btn-primary btn-lg btn-dotnet">Registrate</button></a>
-        </article>
-      </div>
-      <div class="col-sm-12 col-md-12 col-xl-4">
-        <img class="community-cartoons img-fluid" src="img/cartoons_community.png" alt="Community Cartoons"
-          style="max-width: 100%;" />
-      </div>
-    </section>
-
-    <section class="row light-grey-row">
-      <div class="col-sm-12 offset-md-2 col-md-8">
-        <br />
-        <br />
-
-        <h1 id="agenda" class="call-for-speakers text-center">Agenda</h1>
-        <p class="text-center">Con <strong>más de 20 sesiones</strong> en vivo, es importante conocer cómo está
-          organizada la agenda. Revísala a continuación (se ajusta y muestra <strong>en tu propia zona horaria</strong>
-          automáticamente).</strong></p>
-        <br />
-        <br />
-        <script type="text/javascript" src="https://sessionize.com/api/v2/datsh9im/view/GridSmart"></script>
-        <br />
-        <br />
-      </div>
-    </section>
-
-    <section class="row light-grey-row">
-      <div class="col-sm-12 offset-md-2 col-md-8">
-        <h1 id="speakers" class="call-for-speakers text-center">Speakers</h1>
-        <p class="text-justify">
-          Conoce a los ponentes</a> que estarán compartiendo <strong>sus conocimientos</strong> durante el .NET Conf
-          LATAM 2021.
-        </p>
-        <iframe src="speakers.html" style="display:block; border:none; height:100vh; width:100%;"></iframe>
-      </div>
-    </section>
-
-    <section class="row light-grey-row">
-      <div class="col-sm-12 col-md-12 col-xl-12">
-        <h1 id="pwa" class="call-for-speakers text-center">Aplicación móvil</h1>
-      </div>
-      <div class="col-sm-12 col-md-6 offset-xl-4 col-xl-2">
-        <a href="https://sessionize.com/netconflatam2021/" target="_blank">
-          <a href="https://dotnetconflatam2021.sessionize.com" target="_blank"><img src="./img/NetConfPwa.gif"
-              style="height:400px;" /></a>
-        </a>
-      </div>
-      <div class="col-sm-12 col-md-3">
-        <p class="text-justify">
-          Visita o descarga nuestra <a href="https://dotnetconflatam2021.sessionize.com/" target="_blank">Aplicación
-            móvil</a>.
-          <br />
-          La aplicación móvil funciona en todos los móviles, tablets y ordenadores de sobremesa modernos. Utiliza
-          tecnología Progressive Web Application.
-        </p>
-      </div>
-    </section>
-
-    <section class="row">
-      <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center">
-        <h2 id="socialMedia" class="text-subtitle font-weight-bold text-center">SOCIAL MEDIA</h2>
-        <br />
-        <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNetConf-Latam-112807460502694&tabs=timeline&width=600&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1490801261133993"
-          width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowTransparency="true" allow="encrypted-media"></iframe>
-        &emsp;&emsp;
-        <a class="twitter-timeline" data-width="500" data-height="800"
-          href="https://twitter.com/netConfLatam?ref_src=twsrc%5Etfw">Tweets by netConfLatam</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </section>
-
-    <section class="row">
-        <div class="col-sm-12 offset-md-2 col-md-8">
-            <hr />
-            <h2 id="organizers" class="text-subtitle font-weight-bold text-center">ORGANIZADORES</h2>
-            <br />
-            <!-- HTML -->
-            <div id="carousel-slider" class="row">
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/aprendiendoazure.png" alt="aprendiendoazure">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/aspnetmvc.png" alt="aspnetmvc">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/avanet logo new.png" alt="avanet">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/CEC.jpeg" alt="CEC">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/Celula Microsoft UIsrael.png" alt="UIsrael">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/comunidadxamarin.png" alt="comunidadxamarin">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/ConoSurTech_Logo_Azul1.png" alt="ConoSurTech_Logo_Azul1">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/dotnetbolivia.png" alt="dotnetbolivia">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/El Camino Dev - Comunidad.png" alt="Camino">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/Guadalajara Connect.png" alt="Guadalajara">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/latinonet.png" alt="latinonet">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/logo secretos xamarin.png" alt="secretos xamarin">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/logo_gira.JPG" alt="logo_gira">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/logo_microsoft_dev_group_guatemala.png" alt="logo_microsoft_dev_group_guatemala">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/logoATF.jpg" alt="logoATF">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/LogoComunidadLP.png" alt="LogoComunidadLP">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/MUG Ecuador2.png" alt="MUG Ecuador">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/MUGPerú.png" alt="MUGPerú">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/netnicaragua.jpeg" alt="netnicaragua">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/pueblanet.png" alt="pueblanet">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/Secretos Blazor.png" alt="Secretos Blazor">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/TabscoobAI.jpg" alt="TabscoobAI">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/tech_community_logo_guatemala.jpg" alt="tech_community_logo_guatemala">
-                </div>
-                <div>
-                    <img style="width:100%; height:100%;" class="img-fluid sponsor-logo-img d-block w-100" src="img/Organizers/Virtual DEV Show - Azul.png" alt="Virtual DEV Show - Azul">
-                </div>
-            </div>
-        </div>
-    </section>         
-
-    <br />
-    <br />
-    <br />
-
-    <section class="row">
-      <div class="col-sm-12 offset-md-2 col-md-8">
-        <hr />
-        <h2 id="sponsors" class="text-subtitle font-weight-bold text-center">PATROCINADORES</h2>
-        <br />
-
-        <div class="row cards-container v-cards-container">
-
-          <div class="col-sm-12 col-md-4 v-flipper">
-            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-front text-center"><strong>Microsoft Press</strong></div>
-              </div>
-              <div class="card-content">
-                <br />
-                <br />
-                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/1200px-Microsoft_Press_Logopng.png"
-                  alt="Microsoft Press">
-              </div>
-            </div>
-            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-back text-center"><strong>Microsoft Press</strong></div>
-              </div>
-              <div class="card-content">
-                <p>Es el <a href="https://www.microsoftpressstore.com/" target="_blank">brazo editorial</a> de
-                  Microsoft, y publica libros que tratan sobre diversas tecnologías actuales de Microsoft. Su generoso
-                  apoyo es el aporte de cupones (canjeables por eBooks), los cuales ser&#225;n rifados en el evento.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 v-flipper">
-            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-front text-center"><strong>.NET Foundation</strong></div>
-              </div>
-              <div class="card-content">
-                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/1200px-.NET_Foundation_Logo.svg.png"
-                  alt="DotNet Foundation" style="max-width: 50%;" />
-              </div>
-            </div>
-            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-back text-center"><strong>.NET Foundation</strong></div>
-              </div>
-              <div class="card-content">
-                <p><a href="https://dotnetfoundation.org/" target="_blank">Organización</a> incorporada por Microsoft en
-                  2014, para mejorar el desarrollo de software de código abierto y la colaboración en torno a .NET
-                  Framework. Su cuantioso apoyo al evento radica en "Streamming Support" por medio del canal de YouTube
-                  de la .NET Foundation.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 v-flipper">
-            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-front text-center"><strong>JetBrains</strong></div>
-              </div>
-              <div class="card-content text-center">
-                <img class="img-fluid sponsor-logo-img jetbrains-logo" src="img/Sponsors/jetbrains_logo.png"
-                  alt="JetBrainsLogo">
-              </div>
-            </div>
-            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-back text-center"><strong>JetBrains</strong></div>
-              </div>
-              <div class="card-content">
-
-                <p><a href="https://www.jetbrains.com/" target="_blank">Compa&#241;ía</a> de desarrollo de software
-                  cuyas herramientas están dirigidas a ingenieros de software. Ofrece una familia de IDEs para: .NET,
-                  Java, Kotlin, Ruby, Python, PHP, C, C ++, Objective-C, Go y JavaScript. Su valioso aporte en este
-                  evento, son licencias para el toolkit <a href="https://www.jetbrains.com/dotnet/"
-                    target="_blank">dotUltimate</a>.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 v-flipper">
-            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-front text-center"><strong>El Camino Dev</strong></div>
-              </div>
-              <div class="card-content">
-                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/elcaminodev.png" alt="El Camino Dev"
-                  style="max-width: 50%;" />
-              </div>
-            </div>
-            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-back text-center"><strong>El Camino Dev</strong></div>
-              </div>
-              <div class="card-content">
-                <p><a href="https://elcamino.dev/" target="_blank">Academia</a> de entrenamiento en l&#237;nea para
-                  desarrolladores, en este evento colabora a la comunidad brindando cupones de sus cursos para ser
-                  rifados.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 v-flipper">
-            <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-front text-center"><strong>NET University</strong></div>
-              </div>
-              <div class="card-content">
-                <br />
-                <br />
-                <img class="img-fluid sponsor-logo-img" src="img/Sponsors/netuniversity.png" alt="Net University">
-              </div>
-            </div>
-            <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-              data-content="Click para más info">
-              <div class="card-image">
-                <div class="header-back text-center"><strong>NET University</strong></div>
-              </div>
-              <div class="card-content">
-                <p><a href="https://net-university.ninja/" target="_blank">Academia</a> en l&#237;nea que brinda
-                  capacitaci&#243;n a inform&#225;ticos, se suma colaborando con cupones de sus cursos para ser rifados.
-                </p>
-              </div>
-            </div>
-          </div>         
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container text-center">
-      <span class="text-white">.NET Conf Latam 2021. Código de conducta | Política de privacidad </span>
-    </div>
-  </footer>
-    <script>
-        $("#carousel-slider").slick({
-            arrows: false,
-            infinite: true,
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            mobileFirst: true,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        autoplay: true,
-
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        autoplay: true,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        slidesToScroll: 1,
-                        autoplay: true
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
-    </script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+  </body>
 </html>
